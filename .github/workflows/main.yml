@@ -10,7 +10,7 @@ jobs:
       - name: Updating ref
         run: |
           echo "Setting ref to '${{ github.event.client_payload.ref }}'"
-          sed -i -e 's/=.*/${{ github.event.client_payload.ref }}/g' dev.env
+          sed -i -e 's/=.*/=${{ github.event.client_payload.ref }}/g' dev.env
       - name: identify to github
         run: |
           git config --local user.email autobot@bar.com
