@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Run a one-line script
         run: |
-          echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.repository }}'"
+          echo "Event '${{ github.event.action }}' received from '${{ github.event.client_payload.ref }}'"
