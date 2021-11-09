@@ -22,5 +22,5 @@ jobs:
       - name: commit changes
         run: git commit -m "Auto ref update"
       - name: push changes
-        run: git push origin HEAD:master
+        run: git push origin HEAD:main
           
